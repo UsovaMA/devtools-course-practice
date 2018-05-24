@@ -3,10 +3,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
+#include <string.h>
+
 #include <vector>
 #include <string>
 #include <sstream>
-#include <algorithm>
 
 #include "include/big_number.h"
 #include "include/bignum_calculator.h"
