@@ -113,7 +113,6 @@ const BigNumber BigNumber::operator-(const BigNumber& z) const {
 
     int size = std::max((*this).number.size(), z.number.size());
     std::string str_for_res;
-    unsigned int k = 0;
 
     for (int i = 0; i <= size + 1; ++i) str_for_res += '0';
 

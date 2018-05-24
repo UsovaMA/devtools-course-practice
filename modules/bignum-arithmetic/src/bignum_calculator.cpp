@@ -1,11 +1,11 @@
 // Copyright 2018 Usova Marina
 
 #include <vector>
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <string.h>
 #include <string>
-
-#include <cstdio>
-#include <cstdlib>
-#include <cstdint>
 #include <sstream>
 
 #include "include/big_number.h"
