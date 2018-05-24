@@ -7,6 +7,7 @@
 #include <string.h>
 #include <string>
 #include <sstream>
+#include <algorithm>
 
 #include "include/big_number.h"
 #include "include/bignum_calculator.h"
