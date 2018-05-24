@@ -61,7 +61,7 @@ std::vector <int> parseNumber(const char* arg) {
       number.push_back(static_cast<int>(arg[0]) - 48);
     }
 
-    std::reverse(number.begin(), number.end());
+    reverse(number.begin(), number.end());
 
     return number;
 }

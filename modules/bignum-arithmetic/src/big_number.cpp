@@ -113,7 +113,7 @@ const BigNumber BigNumber::operator-(const BigNumber& z) const {
 
     int size = std::max((*this).number.size(), z.number.size());
     std::string str_for_res;
-    int k = 0;
+    unsigned int k = 0;
 
     for (int i = 0; i <= size + 1; ++i) str_for_res += '0';
 
@@ -124,7 +124,7 @@ const BigNumber BigNumber::operator-(const BigNumber& z) const {
     if (x.number.size() > y.number.size())
       while (y.number.size() != x.number.size()) y.number.push_back(0);
 
-    for (int i = 0; i < y.number.size(); i++) {
+    for (unsigned int i = 0; i < y.number.size(); i++) {
       if (x.number[i] < y.number[i]) {
         x.number[i + 1]--;
         x.number[i] += 10;
@@ -300,20 +300,20 @@ const BigNumber BigNumber::operator/(const int & z) const {
 
 std::vector<int> BigNumber::getNumber() const {
     std::vector<int> result = number;
-    std::reverse(result.begin(), result.end());
+    reverse(result.begin(), result.end());
     return result;
 }
 
 std::string BigNumber::getResultInString() const {
     std::string result;
     std::vector<int> tmp = number;
-    std::reverse(tmp.begin(), tmp.end());
+    reverse(tmp.begin(), tmp.end());
 
     if (tmp[0] < 0) {
       result += "-";
       tmp[0] = -tmp[0];
     }
-    for (int i = 0; i < tmp.size(); i++) {
+    for (unsigned int i = 0; i < tmp.size(); i++) {
       std::ostringstream b;
       b << tmp[i];
       result += b.str();
@@ -324,7 +324,7 @@ std::string BigNumber::getResultInString() const {
 
 void BigNumber::setNumber(const std::vector<int> z) {
     std::vector<int> number_ = z;
-    std::reverse(number_.begin(), number_.end());
+    reverse(number_.begin(), number_.end());
     number = number_;
 }
 

@@ -1,13 +1,13 @@
-// Copyright 2017 Korniakov Kirill
+// Copyright 2018 Usova Marina
 
-#include <stdlib.h>
-#include <stdio.h>
+#include <cstdlib>
+#include <cstdio>
 #include <string>
 
-#include "include/complex_calculator.h"
+#include "include/bignum_calculator.h"
 
 int main(int argc, const char** argv) {
-    ComplexCalculator app;
+    BigNumCalculator app;
     std::string output = app(argc, argv);
     printf("%s\n", output.c_str());
     return 0;
