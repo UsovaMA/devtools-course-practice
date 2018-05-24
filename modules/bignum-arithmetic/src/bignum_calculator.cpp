@@ -1,10 +1,9 @@
 // Copyright 2018 Usova Marina
 
-#include <vector>
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
-#include <string.h>
+#include <vector>
 #include <string>
 #include <sstream>
 #include <algorithm>
